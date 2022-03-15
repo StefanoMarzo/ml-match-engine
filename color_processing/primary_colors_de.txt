@@ -1,0 +1,15 @@
+blau
+grun
+silber
+gold
+beige
+braun
+gelb
+rot
+wei
+orange
+grau
+rosa
+schwarz
+lila
+cognac
