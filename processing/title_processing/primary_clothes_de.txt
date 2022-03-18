@@ -13,7 +13,6 @@ shorts
 kleid
 rucksack
 bagpack
-stiefelette
 stiefel
 maple
 gaya
@@ -69,18 +68,14 @@ lip
 set
 neora
 overall
-and
 bumpy
 faustling
 blazer
-ack
 kisa
 honor
 marina
-lei
 pilo
 tony
-rte
 ankra
 tights
 pantolette
@@ -88,7 +83,6 @@ viljana
 donna
 tanga
 loafer
-nte
 haus
 pyjama
 schu
@@ -100,9 +94,7 @@ mule
 badeanzug
 analoguhr
 haar
-ron
 krista
-lad
 henri
 duft
 korperol

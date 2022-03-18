@@ -6,8 +6,8 @@ from PIL import Image
 import urllib
 
 
-offers_training_df = pd.read_parquet('offers_training.parquet')
-offers_test_df = pd.read_parquet('offers_test.parquet')
+offers_training_df = pd.read_parquet('data/offers_training.parquet')
+offers_test_df = pd.read_parquet('data/offers_test.parquet')
 
 def plot_images(product):
     

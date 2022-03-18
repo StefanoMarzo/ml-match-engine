@@ -13,3 +13,4 @@ rosa
 schwarz
 lila
 cognac
+aubergine

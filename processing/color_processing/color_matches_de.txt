@@ -30,6 +30,7 @@ petrol:blau
 bordeaux:rot
 lachs:rot
 koralle:rot
+purpur:rot
 oliv:grun
 khaki:grun
 smaragd:grun
