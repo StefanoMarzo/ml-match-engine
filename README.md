@@ -13,7 +13,7 @@ Please find a working util script for dowloading images from URLs, merging them 
 
 #### Results:
 Results are available in the folder `/Predictions`.  
-Along with screenshoot of the metrics, you can find predictions dataset for training and testing (unseen) data, for both EXP0 and EXP1.
+Along with screenshoot of the metrics, you can find predictions dataset for training and testing (unseen) data, for both EXP0 and EXP1.  
 Training data predictions EXP0: `Predictions/predictions_training_EXP0.parquet`  
 Training data predictions EXP1: `Predictions/predictions_training_EXP1.parquet`  
 Test data predictions EXP0: `Predictions/predictions_testing_EXP0.parquet`  
