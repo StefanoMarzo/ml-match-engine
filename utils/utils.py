@@ -43,7 +43,7 @@ def explore_match(match, groundtruth=None):
     if groundtruth is not None:
         true_offer_id = groundtruth.loc[
 	        groundtruth['zalando'] == zal_offer_id
-            ]['aboutyou'].values[0]
+            ]['aboutyou']
         true_offer = offers_training_df[offers_training_df['offer_id'] == true_offer_id].iloc[0]
     
     # get offers
@@ -98,7 +98,7 @@ def presence_in_n(best_n_matches, true_matches):
         )
     return df_predicted_matches
 
-def get_metrics(true_matches, predicted_matches, best_n_matches, offers_comp, all_true_matches):
+def get_metrics(true_matches, predicted_matches, offers_comp):
     """ Calculate performance metrics """
     
     # True Positives
@@ -150,12 +150,7 @@ def get_metrics(true_matches, predicted_matches, best_n_matches, offers_comp, al
     if precision + recall > 0:
         F1 = 2 * precision * recall / (precision + recall)
     
-    predicted = presence_in_n(best_n_matches, all_true_matches)
-    l = len(predicted)
-    l1 = len(predicted.loc[predicted['success']]) * 100
-    l3 = len(predicted.loc[predicted['p3']]) * 100
-    l5 = len(predicted.loc[predicted['p5']]) * 100
-    l10 = len(predicted.loc[predicted['p10']]) * 100
+    
     
     metrics = dict(
         TP=TP,
@@ -167,10 +162,6 @@ def get_metrics(true_matches, predicted_matches, best_n_matches, offers_comp, al
         precision=precision,
         recall=recall,
         F1=F1,
-        PS=round(l1 / l, 4),
-        P3=round(l3 / l, 4),
-        P5=round(l5 / l, 4),
-        P10=round(l10 / l, 4)
     )
         
     return metrics
